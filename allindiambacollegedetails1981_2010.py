@@ -15,36 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  # "https://www.shiksha.com/college/ranippettai-engineering-college-vellore-43177",
-  # "https://www.shiksha.com/college/sitapur-shiksha-sansthan-group-of-institutions-uttar-pradesh-other-52872",
-  # "https://www.shiksha.com/college/sau-leena-kishor-mamidwar-institute-of-management-studies-and-research-chandrapur-66465",
-  # "https://www.shiksha.com/college/maharaja-business-school-khurda-148053",
-  # "https://www.shiksha.com/university/kn-university-ahmedabad-228871",
-  # "https://www.shiksha.com/college/nimbus-academy-of-management-dehradun-4307",
-  # "https://www.shiksha.com/college/bharathiar-school-of-management-and-entrepreneur-development-bsmed-coimbatore-19611",
-  # "https://www.shiksha.com/college/infant-jesus-college-of-engineering-tirunelveli-48102",
-  # "https://www.shiksha.com/college/department-of-pg-studies-visvesvaraya-technological-university-bangalore-chikkaballapur-51579",
-  # "https://www.shiksha.com/college/shri-jaysukhlal-vadhar-institute-of-management-studies-jamnagar-54495",
-  # "https://www.shiksha.com/college/shree-venkateshwara-hi-tech-engineering-college-erode-61619",
-  # "https://www.shiksha.com/college/bharat-p-g-college-for-women-barkatpura-hyderabad-62055",
-  # "https://www.shiksha.com/college/xavier-institute-of-development-action-and-studies-jabalpur-21557",
-  # "https://www.shiksha.com/college/mats-institute-of-management-and-entrepreneurship-jayanagar-bangalore-26628",
-  # "https://www.shiksha.com/college/ssb-synergy-school-of-business-medchal-hyderabad-31069",
-  # "https://www.shiksha.com/college/indian-institute-of-event-management-research-iiemr-jaipur-46712",
-  # "https://www.shiksha.com/college/malineni-lakshmaiah-womens-engineering-college-guntur-60668",
-  # "https://www.shiksha.com/college/amu-murshidabad-centre-144581",
-  # "https://www.shiksha.com/university/jagadguru-rambhadracharya-handicapped-university-jrhu-uttar-pradesh-other-23138",
-  # "https://www.shiksha.com/college/dayal-group-of-institution-lucknow-38375",
-  # "https://www.shiksha.com/college/mahaveer-institute-of-technology-meerut-43213",
-  # "https://www.shiksha.com/college/new-prince-shri-bhavani-college-of-engineering-and-technology-velachery-chennai-46788",
-  # "https://www.shiksha.com/college/rabiammal-ahamed-maideen-college-for-women-thiruvarur-74743",
-  "https://www.shiksha.com/college/skp-engineering-college-skpec-tamil-nadu-other-22962",
-  "https://www.shiksha.com/college/b-m-group-of-institutions-bmgi-gurgaon-24138",
-  "https://www.shiksha.com/college/narasaraopeta-engineering-college-autonomous-guntur-25422",
-  "https://www.shiksha.com/college/hyderabad-school-of-management-148481",
-  "https://www.shiksha.com/college/school-of-future-techno-india-university-kolkata-229285",
-  "https://www.shiksha.com/college/vikrant-institute-of-business-management-gwalior-31589",
-  "https://www.shiksha.com/college/ck-college-of-engineering-and-technology-ckcet-tamil-nadu-other-42702",
+  "https://www.shiksha.com/college/ewing-christian-institute-of-management-and-technology-ecimt-allahabad-37373",
+  "https://www.shiksha.com/college/bis-group-of-institutions-moga-43335",
+  "https://www.shiksha.com/college/institute-of-technology-and-management-lucknow-47435",
+  "https://www.shiksha.com/college/mathuradevi-group-of-institutes-indore-48136",
+  "https://www.shiksha.com/college/mysuru-royal-institute-of-technology-mysore-59743",
+  "https://www.shiksha.com/college/sree-chaitanya-p-g-college-karimnagar-62077",
+  "https://www.shiksha.com/college/rklk-pg-college-telangana-other-62217",
+  "https://www.shiksha.com/college/snmv-college-of-arts-and-science-coimbatore-63561",
+  "https://www.shiksha.com/college/gautam-institute-of-management-and-technology-hamirpur-68725",
+  "https://www.shiksha.com/college/mahalaxmi-group-of-institutions-meerut-68999",
+  "https://www.shiksha.com/college/malwa-college-bathinda-73333",
+  "https://www.shiksha.com/college/nimra-college-of-business-management-vijayawada-59069",
+  "https://www.shiksha.com/college/nri-institute-of-technology-guntur-60865",
+  "https://www.shiksha.com/college/visakha-institute-of-management-science-visakhapatnam-62523",
+  "https://www.shiksha.com/college/rasiklal-m-dhariwal-institute-of-management-maharashtra-other-64223",
+  "https://www.shiksha.com/college/p-r-pote-patil-group-of-educational-institutions-amravati-64643",
+  "https://www.shiksha.com/college/valluvar-college-of-science-and-management-karur-66855",
+  "https://www.shiksha.com/college/gyanoday-institute-of-management-and-technology-madhya-pradesh-other-72121",
+  "https://www.shiksha.com/college/mumbai-educational-trusts-institute-management-studies-73789",
+  "https://www.shiksha.com/college/sun-institute-of-management-and-technology-shahjahanpur-77033",
 ]
 
 
@@ -9252,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2004
+    c_count =1951
 
     try:
         for base_url in BASE_URL:
