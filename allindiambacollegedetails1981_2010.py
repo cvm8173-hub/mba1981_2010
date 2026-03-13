@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/ewing-christian-institute-of-management-and-technology-ecimt-allahabad-37373",
-  "https://www.shiksha.com/college/bis-group-of-institutions-moga-43335",
-  "https://www.shiksha.com/college/institute-of-technology-and-management-lucknow-47435",
-  "https://www.shiksha.com/college/mathuradevi-group-of-institutes-indore-48136",
-  "https://www.shiksha.com/college/mysuru-royal-institute-of-technology-mysore-59743",
-  "https://www.shiksha.com/college/sree-chaitanya-p-g-college-karimnagar-62077",
-  "https://www.shiksha.com/college/rklk-pg-college-telangana-other-62217",
-  "https://www.shiksha.com/college/snmv-college-of-arts-and-science-coimbatore-63561",
-  "https://www.shiksha.com/college/gautam-institute-of-management-and-technology-hamirpur-68725",
-  "https://www.shiksha.com/college/mahalaxmi-group-of-institutions-meerut-68999",
-  "https://www.shiksha.com/college/malwa-college-bathinda-73333",
-  "https://www.shiksha.com/college/nimra-college-of-business-management-vijayawada-59069",
-  "https://www.shiksha.com/college/nri-institute-of-technology-guntur-60865",
-  "https://www.shiksha.com/college/visakha-institute-of-management-science-visakhapatnam-62523",
-  "https://www.shiksha.com/college/rasiklal-m-dhariwal-institute-of-management-maharashtra-other-64223",
-  "https://www.shiksha.com/college/p-r-pote-patil-group-of-educational-institutions-amravati-64643",
-  "https://www.shiksha.com/college/valluvar-college-of-science-and-management-karur-66855",
-  "https://www.shiksha.com/college/gyanoday-institute-of-management-and-technology-madhya-pradesh-other-72121",
-  "https://www.shiksha.com/college/mumbai-educational-trusts-institute-management-studies-73789",
-  "https://www.shiksha.com/college/sun-institute-of-management-and-technology-shahjahanpur-77033",
+  "https://www.shiksha.com/college/isbr-business-school-powered-by-sunstone-select-electronic-city-phase-1-bangalore-213095",
+  "https://www.shiksha.com/college/dr-mrar-pg-center-krishna-51575",
+  "https://www.shiksha.com/college/csm-group-of-institutions-allahabad-60037",
+  "https://www.shiksha.com/college/vidhyapeeth-institute-of-science-technology-bhopal-60257",
+  "https://www.shiksha.com/college/shiv-kumar-singh-institute-of-technology-science-indore-60271",
+  "https://www.shiksha.com/university/jharkhand-raksha-shakti-university-ranchi-61799",
+  "https://www.shiksha.com/college/st-ann-s-degree-college-for-women-guntur-62323",
+  "https://www.shiksha.com/college/don-bosco-pg-college-guntur-62475",
+  "https://www.shiksha.com/college/institute-of-engineering-technology-chennai-68609",
+  "https://www.shiksha.com/college/maharanis-commerce-and-management-college-for-women-mysore-68661",
+  "https://www.shiksha.com/college/arya-school-of-management-and-information-technology-bhubaneswar-70745",
+  "https://www.shiksha.com/college/t-b-m-l-college-nagapattinam-77211",
+  "https://www.shiksha.com/college/aggarwal-college-faridabad-122101",
+  "https://www.shiksha.com/college/dr-l-b-college-visakhapatnam-124261",
+  "https://www.shiksha.com/college/sevantilal-kantilal-school-of-business-management-patan-146607",
+  "https://www.shiksha.com/college/iasscom-fortune-institute-of-technology-bhopal-147339",
+  "https://www.shiksha.com/college/shevaroys-college-of-hotel-management-and-catering-technology-salem-50505",
+  "https://www.shiksha.com/college/university-college-of-engineering-vizianagaram-jawaharlal-nehru-technological-university-kakinada-51535",
+  "https://www.shiksha.com/college/technological-institute-of-textile-and-sciences-haryana-other-52779",
+  "https://www.shiksha.com/college/nehru-institute-of-information-technology-and-management-coimbatore-56357",
 ]
 
 
@@ -9242,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1951
+    c_count =2231
 
     try:
         for base_url in BASE_URL:
