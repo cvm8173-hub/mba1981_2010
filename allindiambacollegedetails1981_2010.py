@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/isbr-business-school-powered-by-sunstone-select-electronic-city-phase-1-bangalore-213095",
-  "https://www.shiksha.com/college/dr-mrar-pg-center-krishna-51575",
-  "https://www.shiksha.com/college/csm-group-of-institutions-allahabad-60037",
-  "https://www.shiksha.com/college/vidhyapeeth-institute-of-science-technology-bhopal-60257",
-  "https://www.shiksha.com/college/shiv-kumar-singh-institute-of-technology-science-indore-60271",
-  "https://www.shiksha.com/university/jharkhand-raksha-shakti-university-ranchi-61799",
-  "https://www.shiksha.com/college/st-ann-s-degree-college-for-women-guntur-62323",
-  "https://www.shiksha.com/college/don-bosco-pg-college-guntur-62475",
-  "https://www.shiksha.com/college/institute-of-engineering-technology-chennai-68609",
-  "https://www.shiksha.com/college/maharanis-commerce-and-management-college-for-women-mysore-68661",
-  "https://www.shiksha.com/college/arya-school-of-management-and-information-technology-bhubaneswar-70745",
-  "https://www.shiksha.com/college/t-b-m-l-college-nagapattinam-77211",
-  "https://www.shiksha.com/college/aggarwal-college-faridabad-122101",
-  "https://www.shiksha.com/college/dr-l-b-college-visakhapatnam-124261",
-  "https://www.shiksha.com/college/sevantilal-kantilal-school-of-business-management-patan-146607",
-  "https://www.shiksha.com/college/iasscom-fortune-institute-of-technology-bhopal-147339",
-  "https://www.shiksha.com/college/shevaroys-college-of-hotel-management-and-catering-technology-salem-50505",
-  "https://www.shiksha.com/college/university-college-of-engineering-vizianagaram-jawaharlal-nehru-technological-university-kakinada-51535",
-  "https://www.shiksha.com/college/technological-institute-of-textile-and-sciences-haryana-other-52779",
-  "https://www.shiksha.com/college/nehru-institute-of-information-technology-and-management-coimbatore-56357",
+  "https://www.shiksha.com/college/rise-krishna-sai-gandhi-group-of-institutions-ongole-60937",
+  "https://www.shiksha.com/college/trimurti-institute-of-technology-jalgaon-147865",
+  "https://www.shiksha.com/college/mahaveer-institute-of-technology-and-management-raebareli-148879",
+  "https://www.shiksha.com/college/gayatri-institute-of-science-and-technology-berhampur-156341",
+  "https://www.shiksha.com/college/sardar-patel-mahavidyalaya-madhya-pradesh-other-157115",
+  "https://www.shiksha.com/college/academy-of-pharmacy-medical-and-management-studies-bihar-other-179977",
+  "https://www.shiksha.com/college/b-r-d-college-of-management-and-sciences-roorkee-187455",
+  "https://www.shiksha.com/college/madha-engineering-college-kanchipuram-193839",
+  "https://www.shiksha.com/college/kopal-college-for-excellence-bhopal-196787",
+  "https://www.shiksha.com/college/a-veeriya-vandayar-memorial-sri-pushpam-college-savvmspc-thanjavur-24019",
+  "https://www.shiksha.com/college/institute-of-engineering-and-technology-alwar-24935",
+  "https://www.shiksha.com/college/abhinav-hi-tech-college-of-engineering-ahtc-himayat-nagar-hyderabad-25497",
+  "https://www.shiksha.com/college/uei-global-ludhiana-36360",
+  "https://www.shiksha.com/college/hasmukh-goswami-college-of-engineering-nava-naroda-ahmedabad-38260",
+  "https://www.shiksha.com/college/monarch-international-college-of-hotel-management-michm-ooty-41110",
+  "https://www.shiksha.com/college/yogananda-institute-of-technology-and-science-tirupati-42703",
+  "https://www.shiksha.com/college/guru-droan-mahavidyalaya-dewas-122345",
+  "https://www.shiksha.com/college/pkg-college-of-engineering-and-technology-panipat-146643",
+  "https://www.shiksha.com/college/mount-zion-institute-of-management-alleppey-147007",
+  "https://www.shiksha.com/college/sam-college-of-management-raisen-147213",
 ]
 
 
@@ -9242,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2231
+    c_count =2531
 
     try:
         for base_url in BASE_URL:
